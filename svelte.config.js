@@ -1,21 +1,20 @@
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex';
-import { getHighlighter } from 'shiki';
+import { createHighlighter } from 'shiki';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
-			const highlighter = await getHighlighter({
+			const highlighter = await createHighlighter({
 				themes: ['poimandres', 'catppuccin-mocha'],
-				langs: ['sh','javascript', 'typescript']
-			})
-			await highlighter.loadLanguage('javascript', 'typescript', 'sh')
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: "catppuccin-mocha" }))
+				langs: ['sh', 'javascript', 'typescript']
+			});
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'catppuccin-mocha' }));
 
-			return `{@html \`${html}\` }`
+			return `{@html \`${html}\` }`;
 		}
 	}
 };
@@ -26,7 +25,12 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			routes: {
+				include: ['/*'],
+				exclude: ['<all>']
+			}
+		})
 	}
 };
 

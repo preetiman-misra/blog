@@ -6,7 +6,7 @@ categories:
   - musings
   - life
 published: true
-image: life-is-bleak.jpg 
+image: life-is-bleak.jpg
 ---
 
 ## The brevity of human life
@@ -19,7 +19,7 @@ This, is what irks me the most. Spending **HOURS UPON HOURS** to finish a plotli
 
 > Why not make life the game?
 
-If you look at it closely, life is truly the most intricate game known to mankind. We spawn in random locations, have random stats and skills assigned upon _character creation_, and there are so many side quests and main plotlines that it gets overwhelming to put it all into perspective. 
+If you look at it closely, life is truly the most intricate game known to mankind. We spawn in random locations, have random stats and skills assigned upon _character creation_, and there are so many side quests and main plotlines that it gets overwhelming to put it all into perspective.
 
 Now comes the question, what is the end goal? Is there a main quest that we need to conquer? Is there some overarching purpose that we as the all-intelligent human beings of the universe have to pursue?
 
@@ -29,20 +29,19 @@ Now comes the question, what is the end goal? Is there a main quest that we need
 
 I repeat, **there is none**. Life, is inherently meaningless. This is not an opinion, neither it is my belief, it is a fact. How, you ask, I speak such _blasphemy_?
 
-It's simple, really. ***Meaning*** is a human construct. For anything to have ***meaning***, a question must exist. Why a question? Because meaning quite literally _means_ definition. In the context of the english language, at least. 
+It's simple, really. **_Meaning_** is a human construct. For anything to have **_meaning_**, a question must exist. Why a question? Because meaning quite literally _means_ definition. In the context of the english language, at least.
 
 But _Mr. Blasphemer_, surely _THAT_ meaning and the one we are talking about is different? Right ? ... Right ?!!
 
-
-What we generally associate with the word _meaning_, when talking about things that matter to us is more aligned with the term ***valuable***.
+What we generally associate with the word _meaning_, when talking about things that matter to us is more aligned with the term **_valuable_**.
 
 > Life is meaningful! All lives are valuable.
 
 Delusions of the weak-minded.
 
-Things such as _meaning_, _value_, _importance_ are all valid concepts **_ONLY_** when there is a context attached. To be more precise, a ***reference***.
+Things such as _meaning_, _value_, _importance_ are all valid concepts **_ONLY_** when there is a context attached. To be more precise, a **_reference_**.
 
-Value requires a reference point for comparison. For instance, _Rs. 100 is more valuable than Rs. 10_, and _4 kg of rice is more valuable than 1 kg of rice_. 
+Value requires a reference point for comparison. For instance, _Rs. 100 is more valuable than Rs. 10_, and _4 kg of rice is more valuable than 1 kg of rice_.
 
 These examples use numbers to quantify value. But what about non-quantifiable comparisons, such as _time spent with family versus time spent in the office_? Here, the reference point is personal. Time spent with family is more valuable to YOU, which may not be true for everyone else.
 
@@ -50,7 +49,7 @@ These examples use numbers to quantify value. But what about non-quantifiable co
 
 <img style="width: 100%" src="you.gif" alt="Yeah, you" />
 
-Jokes aside, in situations that need to be compared, but cannot be quantified, _you_ become the reference point. Looking at the previous quote, time spent with family is more valuable to ***YOU***. That is most certainly not the case for everyone else. Facts are **universally true**, but the previous statement is only **locally true**, _i.e._, true for you.
+Jokes aside, in situations that need to be compared, but cannot be quantified, _you_ become the reference point. Looking at the previous quote, time spent with family is more valuable to **_YOU_**. That is most certainly not the case for everyone else. Facts are **universally true**, but the previous statement is only **locally true**, _i.e._, true for you.
 
 So, now that we have covered all the attack points for disproving my statement of the fact -
 
@@ -92,7 +91,7 @@ Again, we are not universal beings. Forget the universe, we don't understand our
 
 That is why we play games, isn't it? So what if life is meaningless, so what if there is no justice, no true love or affection, no salvation from sins? Will you stop playing this game called life?
 
-The answer is **no**. You'll play. You'll keep playing till you have no turns left. The only absolute exit from this game is the final event called death. 
+The answer is **no**. You'll play. You'll keep playing till you have no turns left. The only absolute exit from this game is the final event called death.
 
 There are no performance evaluations till your performance is not over, and the best part is, you will never know the result. You will only know the moves you made. The game, however, is always eternal.
 

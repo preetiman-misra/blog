@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let klass;
+	let { klass }: { klass: string } = $props();
 </script>
 
 <svg class={klass} viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">

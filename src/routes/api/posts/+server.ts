@@ -25,7 +25,9 @@ async function getPosts() {
 					slug
 				}
 			} satisfies Post;
-			post.metadata.published && posts.push(post);
+			if (post.metadata.published) {
+				posts.push(post);
+			}
 		}
 	}
 

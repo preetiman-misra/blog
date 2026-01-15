@@ -1,34 +1,69 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
+	import type { PageData } from './$types';
 
-	export let data;
+	let { data }: { data: PageData } = $props();
 </script>
 
-<!-- Posts -->
-<section>
-	<p class="text-5xl mb-24 leading-tight">
-		👋 Hey, I&apos;m <span class="text-indigo-600 underline underline-offset-4 italic"
-			>Preetiman</span
-		>. This is my tiny corner on the internet.
-	</p>
+<!-- Hero Section -->
+<section class="pb-fluid-3xl">
+	<div class="max-w-2xl">
+		<p class="text-fluid-xs font-medium text-emerald-600 mb-fluid-s tracking-wide uppercase">
+			Welcome
+		</p>
+		<h1
+			class="text-fluid-3xl font-semibold leading-[1.15] tracking-tight text-slate-900 mb-fluid-m"
+		>
+			Hey, I'm Preetiman.
+		</h1>
+		<p class="text-fluid-base text-slate-600 leading-relaxed">
+			A developer writing about technology, building products, and the occasional reflection on
+			life. Thanks for stopping by.
+		</p>
+	</div>
+</section>
 
-  <p class="font-semibold text-xl mb-4">Blog <span class="-ml-1.5 text-4xl">&rarr;</span></p>
-	<ul class="space-y-4">
-		{#each data.posts as post}
-			<li class="border-b pb-6">
-				<a
-					href={`/blog/${post.metadata.slug}`}
-					class="transition-all font-black text-2xl hover:text-indigo-600"
-					>{post.metadata.title}</a
-				>
-				<p class="text-slate-400 italic text-sm my-2">{formatDate(post.metadata.date)}</p>
-				<div class="mt-2 mb-4 flex items-center space-x-2">
-					{#each post.metadata.categories as category}
-						<span class="text-indigo-600 font-semibold text-sm">&num;{category}</span>
-					{/each}
-				</div>
-				<p class="text-slate-800">{post.metadata.description}</p>
-			</li>
+<!-- Posts Section -->
+<section>
+	<header class="mb-fluid-xl">
+		<h2 class="text-fluid-xs font-medium text-slate-400 tracking-wide uppercase">Latest Posts</h2>
+	</header>
+
+	<div class="space-y-fluid-xs">
+		{#each data.posts as post, i}
+			{#if i > 0}
+				<div class="border-t border-slate-100"></div>
+			{/if}
+			<article class="group py-fluid-m">
+				<a href={`/blog/${post.metadata.slug}`} class="block">
+					<div class="flex flex-col sm:flex-row sm:items-baseline gap-fluid-xs sm:gap-fluid-m">
+						<time
+							datetime={post.metadata.date}
+							class="text-fluid-xs text-slate-400 tabular-nums shrink-0 sm:w-28"
+						>
+							{formatDate(post.metadata.date)}
+						</time>
+
+						<div class="space-y-fluid-2xs flex-1">
+							<h3
+								class="text-fluid-base font-medium text-slate-900 group-hover:text-emerald-600 transition-colors"
+							>
+								{post.metadata.title}
+							</h3>
+
+							<p class="text-fluid-xs text-slate-500 leading-relaxed line-clamp-2">
+								{post.metadata.description}
+							</p>
+
+							<div class="flex flex-wrap gap-fluid-2xs pt-fluid-2xs">
+								{#each post.metadata.categories as category}
+									<span class="text-fluid-2xs text-slate-400">#{category}</span>
+								{/each}
+							</div>
+						</div>
+					</div>
+				</a>
+			</article>
 		{/each}
-	</ul>
+	</div>
 </section>

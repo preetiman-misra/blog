@@ -1,3 +1,5 @@
+import type { Component } from 'svelte';
+
 export type Category =
 	| 'sveltekit'
 	| 'svelte'
@@ -8,14 +10,21 @@ export type Category =
 	| 'life'
 	| 'svg';
 
+export type PostMetadata = {
+	title: string;
+	description: string;
+	slug: string;
+	date: string;
+	categories: Category[];
+	published: boolean;
+	image?: string;
+};
+
 export type Post = {
-	metadata: {
-		title: string;
-		description: string;
-		slug: string;
-		date: string;
-		categories: Category[];
-		published: boolean;
-		image?: string;
-	};
+	metadata: PostMetadata;
+};
+
+export type PostModule = {
+	default: Component;
+	metadata: PostMetadata;
 };
