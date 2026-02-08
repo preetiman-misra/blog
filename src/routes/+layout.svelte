@@ -41,7 +41,7 @@
 				<li>
 					<a
 						class="text-fluid-xs text-slate-500 hover:text-slate-900"
-						href="mailto:preetiman.misra@gmail.com"
+						href="mailto:preetiman@hey.com"
 					>
 						Contact
 					</a>
